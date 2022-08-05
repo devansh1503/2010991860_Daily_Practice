@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(25, 24, 24);
+        }
+        .first{
+            width: 90vw;
+            height: 80px;
+            background-color: orangered;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .emp{
+            width: 90vw;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        .emp p{
+            font-size: 25px;
+            font-family: cursive;
+            color: orange;
+        }
+        .sec{
+            width: 90vw;
+            height: 120px;
+            background-color: orangered;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            margin-left: 10px;
+            transition: all 0.5s ease-in-out;
+        }
+        .box:hover{
+            transform: scale(1.4,1.4);
+        }
+        .sec :first-child{
+            background-color: rgb(172, 135, 207);
+        }
+        .sec :nth-child(2){
+            background-color: white;
+            border: solid;
+            border-width: 10px;
+            border-color: greenyellow;
+            color: greenyellow;
+        }
+        .sec :nth-last-child(1){
+            background-color: gainsboro;
+            color: green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .third{
+            background-color: blueviolet;
+            padding: 10px 10px;
+            width: 90vw
+        }
+        .ln{
+            height: 50px;
+            background-image: linear-gradient(to left, red, purple);
+            color: white;
+            font-size: 30px;
+            margin: 10px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease-in-out;
+        }
+        .ln:hover{
+            transform: rotatex(90deg);
+        }
+        
+
+
+    </style>
+</head>
+    <div class="first">
+        <p>This div has 20px on either side</p>
+    </div>
+    <div class="emp">
+        <p>This is my web font</p>
+    </div>
+    <div class="sec">
+        <div class="box">Element 1</div>
+        <div class="box">Element 2</div>
+        <div class="box">Element 3</div>
+    </div>
+    <div class="third">
+        <div class="ln">1</div>
+        <div class="ln">2</div>
+        <div class="ln">3</div>
+    </div>
+</body>
+</html>
